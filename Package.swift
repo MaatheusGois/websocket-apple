@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "WebSocket",
     platforms: [
-        .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6),
+        .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)
     ],
     products: [
         .library(
@@ -19,7 +19,7 @@ let package = Package(
         ),
         .package(
             name: "WebSocketProtocol",
-            url: "https://github.com/shareup/websocket-protocol.git",
+            url: "https://github.com/MaatheusGois/websocket-protocol.git",
             from: "2.2.0"
         ),
         .package(name: "swift-nio", url: "https://github.com/apple/swift-nio.git", from: "2.0.0")],
