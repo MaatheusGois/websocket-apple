@@ -20,7 +20,7 @@ let package = Package(
         .package(
             name: "WebSocketProtocol",
             url: "https://github.com/MaatheusGois/websocket-protocol.git",
-            from: "2.2.0"
+            from: "patch-1"
         ),
         .package(name: "swift-nio", url: "https://github.com/apple/swift-nio.git", from: "2.0.0")],
     targets: [
