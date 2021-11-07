@@ -272,7 +272,7 @@ private extension WebSocket {
                 self.state = .open(webSocketSession, webSocketTask, delegate)
             }
 
-            self.subjectQueue.async { [weak self] in self?.subject.send(.success(.open)) }
+            self.subjectQueue.async { [weak self] in self?.subject.send(.success(.open(webSocketTask))) }
         }
     }
 
